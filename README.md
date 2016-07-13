@@ -1,13 +1,13 @@
-# vue-sticky
+# vue-sticky-position
 vue sticky 定位组件 [live demo](https://shiye515.github.io/vue-sticky/)
 
 [![NPM version][npm-image]][npm-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: http://img.shields.io/npm/v/vue-sticky.svg?style=flat-square
-[npm-url]: http://npmjs.org/package/vue-sticky
-[download-image]: https://img.shields.io/npm/dm/vue-sticky.svg?style=flat-square
-[download-url]: https://npmjs.org/package/vue-sticky
+[npm-image]: http://img.shields.io/npm/v/vue-sticky-position.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/vue-sticky-position
+[download-image]: https://img.shields.io/npm/dm/vue-sticky-position.svg?style=flat-square
+[download-url]: https://npmjs.org/package/vue-sticky-position
 
 ##简介（Intro）
 
@@ -16,9 +16,9 @@ vue sticky 定位组件 [live demo](https://shiye515.github.io/vue-sticky/)
 
 ## install
 
-[![vue-sticky](https://nodei.co/npm/vue-sticky.png)](https://npmjs.org/package/vue-sticky)
+[![vue-sticky-position](https://nodei.co/npm/vue-sticky-position.png)](https://npmjs.org/package/vue-sticky-position)
 
-`npm install vue-sticky`
+`npm install vue-sticky-position`
 
 ## 用法
 ```html
@@ -29,7 +29,7 @@ vue sticky 定位组件 [live demo](https://shiye515.github.io/vue-sticky/)
 
 如果项目中有用单文件 Vue 组件，推荐如下用法。
 ```javascript
-import Sticky from 'vue-sticky/src/Sticky'
+import Sticky from 'vue-sticky-position/src/Sticky'
 export default {
     components: {
         Sticky
@@ -39,7 +39,7 @@ export default {
 
 如果项目中不用单文件 Vue 组件
 ```javascript
-import Sticky from 'vue-sticky'
+import Sticky from 'vue-sticky-position'
 export default {
     components: {
         Sticky

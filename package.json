@@ -1,5 +1,5 @@
 {
-  "name": "vue-sticky",
+  "name": "vue-sticky-position",
   "version": "1.0.0",
   "description": "A Vue.js sticky position component",
   "main": "dist/sticky.js",
