@@ -63,14 +63,14 @@ export default {
     <tbody>
         <tr>
           <td>top</td>
-          <td>Number</td>
-          <td>0</td>
-          <td>定位时距离顶部的距离</td>
+          <td>[Number, String]</td>
+          <td>'auto'</td>
+          <td>定位时距离顶部的距离，默认保持跟firefox的实现一致，下同</td>
         </tr>
         <tr>
           <td>bottom</td>
-          <td>Number</td>
-          <td>0</td>
+          <td>[Number, String]</td>
+          <td>'auto'</td>
           <td>定位时距离底部的距离</td>
         </tr>
         <tr>

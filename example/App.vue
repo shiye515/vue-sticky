@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <div class="placeholder-prev"></div>
-        <sticky>
+        <sticky top="0">
             <div class="sticky">sticky</div>
         </sticky>
     </div>

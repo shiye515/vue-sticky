@@ -1,5 +1,5 @@
 <template>
-    <div class="placeholder" v-el:placeholder :style="{top:top+'px','z-index':zIndex,bottom:bottom+'px'}">
+    <div class="placeholder" v-el:placeholder :style="{top:ptop,'z-index':zIndex,bottom:pbottom}">
         <slot></slot>
     </div>
     <div class="sticky" :style="stickyStyle" v-if="!stickySupport && stickyShowed">
@@ -10,12 +10,12 @@
 export default {
     props: {
         top: {
-            type: Number,
-            default: 0
+            type: [Number, String],
+            default: 'auto'
         },
         bottom: {
-            type: Number,
-            default: 0
+            type: [Number, String],
+            default: 'auto'
         },
         zIndex: {
             type: Number,
@@ -34,6 +34,14 @@ export default {
                 bottom: 'auto',
                 zIndex: this.zIndex
             }
+        }
+    },
+    computed: {
+        ptop() {
+            return this.top + (/^\d+$/.test(this.top) ? 'px' : '')
+        },
+        pbottom() {
+            return this.bottom + (/^\d+$/.test(this.bottom) ? 'px' : '')
         }
     },
     watch: {
