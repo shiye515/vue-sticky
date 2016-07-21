@@ -53,7 +53,7 @@ export default {
     },
     methods: {
         scrollHandler() {
-            var isHigher = this.$els.placeholder.getBoundingClientRect().top <= this.top;
+            var isHigher = this.$els.placeholder.getBoundingClientRect().top < this.top;
             var isOver = this.$els.placeholder.parentElement.getBoundingClientRect().bottom - this.bottom < this.top + this.stickyHeight;
             if (!isHigher) {
                 this.stickyStyle.display = 'none';
