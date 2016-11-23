@@ -7,13 +7,13 @@
     </div>
 </template>
 <script>
-import Sticky from '../src/Sticky'
+import Sticky from '../src/Sticky';
 
 export default {
     components: {
         Sticky
     }
-}
+};
 </script>
 <style lang="less">
 body {
