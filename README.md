@@ -11,7 +11,8 @@ vue sticky 定位组件 [live demo](https://shiye515.github.io/vue-sticky/)
 
 ##简介（Intro）
 
-- 除了vue之外不依赖其他库
+- 除了vue之外不依赖其他库,
+- 最新版本仅支持vue2.0，使用vue1.0的请安装1.0的版本
 - 如果浏览器支持 sticky 定位，则使用原生方式，不添加滚动监听
 
 ## install
@@ -27,17 +28,6 @@ vue sticky 定位组件 [live demo](https://shiye515.github.io/vue-sticky/)
     </sticky>
 ```
 
-如果项目中有用单文件 Vue 组件，推荐如下用法。
-```javascript
-import Sticky from 'vue-sticky-position/src/Sticky'
-export default {
-    components: {
-        Sticky
-    }
-}
-```
-
-如果项目中不用单文件 Vue 组件
 ```javascript
 import Sticky from 'vue-sticky-position'
 export default {
@@ -65,13 +55,7 @@ export default {
           <td>top</td>
           <td>[Number, String]</td>
           <td>'auto'</td>
-          <td>定位时距离顶部的距离，默认保持跟firefox的实现一致，下同</td>
-        </tr>
-        <tr>
-          <td>bottom</td>
-          <td>[Number, String]</td>
-          <td>'auto'</td>
-          <td>定位时距离底部的距离</td>
+          <td>定位时距离顶部的距离，默认保持跟firefox的实现一致</td>
         </tr>
         <tr>
           <td>z-ndex</td>
