@@ -6,18 +6,16 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 var projectRoot = path.resolve(__dirname, '../')
 
 module.exports = {
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     entry: {
         app: [
-            './example/main.js',
-            // 'webpack-hot-middleware/client?reload=true'
-            './build/dev-client'
+            './example/main.js'
         ]
     },
     output: {
-        path: '/',
+        path: path.resolve(__dirname, '../docs'),
         filename: '[name].js',
-        publicPath: '/'
+        publicPath: '/vue-sticky'
     },
     resolve: {
         extensions: ['', '.js', '.vue'],
@@ -80,12 +78,17 @@ module.exports = {
     plugins: [
         new webpack.DefinePlugin({
             'process.env': {
-                NODE_ENV: '"development"'
+                NODE_ENV: '"production"'
+            }
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
             }
         }),
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
-        new ExtractTextPlugin('[name].[hash:7].css'),
+        new ExtractTextPlugin('[name].css'),
         new webpack.NoErrorsPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
